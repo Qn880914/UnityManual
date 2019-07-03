@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ShaderLab_Syntax_Test : MonoBehaviour
 {
-    [SerializeField] private Texture2D m_MainTexture;
+    [SerializeField] private readonly Texture2D m_MainTexture;
 
-    [SerializeField] private MeshRenderer m_MeshRenderer;
+    [SerializeField] private readonly MeshRenderer m_MeshRenderer;
 
     // Start is called before the first frame update
     void Start()
