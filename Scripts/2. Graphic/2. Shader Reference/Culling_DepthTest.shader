@@ -6,12 +6,13 @@
         [HideInInspector] _MainTex("Main Tex", 2D) = "white"{}
         [HideInInspector] _CubeTex("Cube Tex", Cube) = "white"{}
         [HideInInspector] _3DTex("3D Tex", 3D) = "white"{}
+		[HideInInspector] _2DArray("2D Array", 2DArray) = "white"{}
         
         // Vector and Color
         [HideInInspector] _Vector("Vector", Vector) = (1,1,1,1)
         [HideInInspector] _Color("Color", Color) = (1,0,0,1)
         
-        // Float Int Range
+        // Number and Slider
         [HideInInspector] _Float("Float", float) = 1
         [HideInInspector] _Int("Int", int) = 1
         [HideInInspector] _Range("Range", Range(0,1)) = 0.5
