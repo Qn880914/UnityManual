@@ -20,11 +20,24 @@
 		// DisableBatching 
 		//			True
 		//			False
-		Tags{"Queue"="Geometry" "RenderType"="Opaque"}
+        //          lodfade
+        // ForceNoShadowCasting
+        //          True
+        //          False
+        // IgnoreProjector
+        //          True
+        //          False
+        //  CanUseSpriteAtlas
+        //          True
+        //          False
+        // PreviewType
+        //          Plane
+        //          Skybox
+		Tags{"Queue"="Geometry" "RenderType"="Opaque" "DisableBatching" = "True" "PreviewType"="Plane"}
 
 		Pass
 		{
-			Blend One One
+			//Blend One One
 
 			CGPROGRAM
 #pragma vertex vert
