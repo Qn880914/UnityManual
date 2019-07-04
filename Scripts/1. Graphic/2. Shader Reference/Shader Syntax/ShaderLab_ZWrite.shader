@@ -7,15 +7,17 @@
 
 	SubShader
 	{
-		//Tags{"Queue" = "Transparent" "PreviewType"="Plane"}
+		Tags{"Queue" = "Transparent" "PreviewType"="Plane"}
 
 		Pass
 		{
 			ZWrite Off
 
-			Blend One One
+			//Blend One One
 
-			//ZTest Always
+			ZTest Always
+
+			ColorMask g
 
 			CGPROGRAM
 #pragma vertex vert
