@@ -29,6 +29,7 @@
 	{
 		Pass
 		{
+			//ZTest NotEqual
 CGPROGRAM
 #pragma vertex vert
 #pragma fragment frag
