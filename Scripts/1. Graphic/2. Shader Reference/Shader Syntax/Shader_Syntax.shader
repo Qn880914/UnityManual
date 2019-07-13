@@ -4,7 +4,7 @@
 	{
 		// texture
 		[HideInInspector] _MainTex("Main Tex", 2D) = "white"{}
-		[HideInInspector] _CubeTex("Cube Tex", Cube) = "white"{}
+		_CubeTex("Cube Tex", Cube) = "white"{}
 		[HideInInspector] _2DArrayTex("2DArray Tex", 2DArray) = "white"{}
 		[HideInInspector] _3DTex("3D Tex", 3D) = "white"{}
 
