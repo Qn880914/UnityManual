@@ -1,4 +1,4 @@
-﻿Shader "Custom Shader Syntax"
+﻿Shader "Custom/Shader_Syntax"
 {
 	Properties
 	{
@@ -31,6 +31,7 @@
 		{
 			//ZTest NotEqual
 CGPROGRAM
+#pragma target 3.0
 #pragma vertex vert
 #pragma fragment frag
 

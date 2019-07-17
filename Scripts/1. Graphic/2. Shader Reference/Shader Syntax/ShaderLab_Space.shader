@@ -1,6 +1,6 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Unlit/ShaderLab_Space"
+Shader "Custom/ShaderLab_Space"
 {
 	Properties
 	{
@@ -25,6 +25,7 @@ Shader "Unlit/ShaderLab_Space"
 			Tags{"LightMode"="ForwardBase" "ForceNoShadowCasting"="True" "IgnoreProject"="True"}
 
 			CGPROGRAM
+#pragma target 3.0
 #pragma vertex vert
 #pragma fragment frag
 

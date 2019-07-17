@@ -1,4 +1,4 @@
-﻿Shader "ShaderLab_SubShader_Tags"
+﻿Shader "Custom/ShaderLab_SubShader_Tags"
 {
 	Properties
 	{}
@@ -46,6 +46,7 @@
 			//Blend One One
 
 			CGPROGRAM
+#pragma target 3.0
 #pragma vertex vert
 #pragma fragment frag
 
