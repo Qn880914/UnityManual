@@ -17,6 +17,7 @@ public class Optimize_AssetPostProcess : AssetPostprocessor
     #region Texture import
     public void OnPreprocessTexture()
     {
+        return;
         bool modify = false;
         TextureImporter importer = assetImporter as TextureImporter;
 
@@ -34,6 +35,7 @@ public class Optimize_AssetPostProcess : AssetPostprocessor
 
     private bool TextureImportSettingCommon(TextureImporter importer)
     {
+        return true;
         bool modify = false;
         if(importer.assetPath.IndexOf("Normalmap", StringComparison.OrdinalIgnoreCase) != -1 && 
             importer.textureType != TextureImporterType.NormalMap)
@@ -90,6 +92,7 @@ public class Optimize_AssetPostProcess : AssetPostprocessor
     }
     private bool TextureImportSettingAndroid(TextureImporter importer)
     {
+        return true;
         bool modify = false;
 
         TextureImporterPlatformSettings platformSettings = importer.GetPlatformTextureSettings(platformAndroid);
@@ -108,6 +111,7 @@ public class Optimize_AssetPostProcess : AssetPostprocessor
     }
     private bool TextureImportSettingIOS(TextureImporter importer)
     {
+        return true;
         bool modify = false;
 
         TextureImporterPlatformSettings platformSettings = importer.GetPlatformTextureSettings(platformIphone);
@@ -140,6 +144,8 @@ public class Optimize_AssetPostProcess : AssetPostprocessor
     #region Model import
     public void OnPreprocessModel()
     {
+        return;
+
         bool modify = false;
 
         ModelImporter importer = assetImporter as ModelImporter;
