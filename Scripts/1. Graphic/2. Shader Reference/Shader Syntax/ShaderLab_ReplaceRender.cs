@@ -9,7 +9,7 @@ public class ShaderLab_ReplaceRender : MonoBehaviour
     [SerializeField] private Shader m_Shader;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if (null != m_Camera && null != m_Shader)
         {
@@ -18,7 +18,7 @@ public class ShaderLab_ReplaceRender : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
     }
 

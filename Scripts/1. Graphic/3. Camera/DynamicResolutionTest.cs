@@ -32,7 +32,7 @@ public class DynamicResolutionTest : MonoBehaviour
     private double m_FrameTimeCPU;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         int width = (int)Mathf.Ceil(ScalableBufferManager.widthScaleFactor * Screen.currentResolution.width);
         int height = (int)Mathf.Ceil(ScalableBufferManager.heightScaleFactor * Screen.currentResolution.height);
@@ -40,7 +40,7 @@ public class DynamicResolutionTest : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         float oldWidthScale = m_WidthScale;
         float oldHeightScale = m_HeightScale;

@@ -9,7 +9,7 @@ public class ShaderLab_Syntax_Test : MonoBehaviour
     [SerializeField] private readonly MeshRenderer m_MeshRenderer;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if(null != m_MainTexture && null != m_MeshRenderer)
         {
@@ -20,7 +20,7 @@ public class ShaderLab_Syntax_Test : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }

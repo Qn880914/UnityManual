@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 public class teset : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         List<int> listInt = new List<int>();
         listInt.Add(5);
@@ -24,8 +25,15 @@ public class teset : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Camera camera = this.GetComponent<Camera>();
+
+        Alloc();
+    }
+
+    private unsafe void Alloc()
+    {
+        //byte* buffer = (byte*)Marshal.AllocHGlobal(1024 * 1024);
     }
 }

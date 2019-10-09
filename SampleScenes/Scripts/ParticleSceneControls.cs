@@ -166,7 +166,7 @@ namespace UnityStandardAssets.SceneUtils
 
 
 #if !MOBILE_INPUT
-        void KeyboardInput()
+        private void KeyboardInput()
         {
             if(Input.GetKeyDown(KeyCode.LeftArrow))
                 Previous();
@@ -177,7 +177,7 @@ namespace UnityStandardAssets.SceneUtils
 #endif
 
 
-        bool CheckForGuiCollision()
+        private bool CheckForGuiCollision()
         {
             PointerEventData eventData = new PointerEventData(eventSystem);
             eventData.pressPosition = Input.mousePosition;

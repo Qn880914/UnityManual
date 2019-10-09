@@ -7,14 +7,14 @@ public class OcclusionCullingTest : MonoBehaviour
     private Camera m_CameraMain;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         m_Renderer = GetComponent<Renderer>();
         m_CameraMain = Camera.main;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(m_Renderer.isVisible)
         {

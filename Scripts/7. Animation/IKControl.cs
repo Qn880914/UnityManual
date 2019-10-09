@@ -14,13 +14,13 @@ public class IKControl : MonoBehaviour
     [SerializeField] private Transform m_LookObj;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         
     }
 
     // Update is called once per frame
-    void OnAnimatorIK()
+    private void OnAnimatorIK()
     {
         if(m_Animator != null)
         {

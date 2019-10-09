@@ -9,7 +9,7 @@ public class TargetMaching : MonoBehaviour
     [SerializeField] private GameObject m_Target;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if(null != m_Animator)
         {
@@ -19,7 +19,7 @@ public class TargetMaching : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
